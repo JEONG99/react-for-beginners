@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 const Detail = () => {
   const { id } = useParams();
@@ -24,6 +24,7 @@ const Detail = () => {
         <div>
           <img src={movie.medium_cover_image} />
           <h1>{movie.title}</h1>
+          <Link to={`${process.env.PUBLIC_URL}/`}>Go To Home</Link>
         </div>
       )}
     </div>
