@@ -22,7 +22,7 @@ const Detail = () => {
         <h1>Loading...</h1>
       ) : (
         <div>
-          <img src={movie.medium_cover_image} />
+          <img src={movie.medium_cover_image} alt={movie.title} />
           <h1>{movie.title}</h1>
           <Link to={`${process.env.PUBLIC_URL}/`}>Go To Home</Link>
         </div>
